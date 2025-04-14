@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+body {
+    background-color: #121212;
+    /* Unified dark background */
+    color: #ffffff;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #1f242d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+
+.logo {
+    color: #9f7aea;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navbar li a {
+    color: white;
+    font-size: 18px;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.navbar li a:hover {
+    border: 2px solid #9f7aea;
+    border-radius: 10px;
+    background-color: #9f7aea;
+    color: #fff;
+}
+
+.github-btn {
+    padding: 8px 12px;
+    border: 2px solid #9f7aea;
+    text-decoration: none;
+    color: #9f7aea;
+    border-radius: 10px;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+.github-btn:hover {
+    background-color: #9f7aea;
+    color: #fff;
+}
+
+section {
+    padding: 100px 20px;
+    /* Adjust for spacing below fixed header */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    /* Unified dark background */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 36px;
+    color: #9f7aea;
+}
+
+/* About Me Section */
+
+
+.About-Me h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.About-Me p {
+    font-size: 18px;
+    line-height: 1.9;
+}
+.about-me-content{
+    margin-right:300px;
+}
+.profile-picture img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 900px;
+    margin-top:-330px;
+}
+
+.button-resume #btn {
+    padding: 10px 20px;
+    border: 2px solid #9f7aea;
+    text-decoration: none;
+    color: #9f7aea;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-resume #btn:hover {
+    background-color: #9f7aea;
+    color: #ffffff;
+}
+
+
+/* Education Section */
+.education-section {
+    top:0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.education-card {
+    background-color: #1e1e2e;
+    border: 1px solid #9f7aea;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 15px 200px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.02);
+}
+
+.education-details h2 {
+    font-size: 24px;
+    color: #9f7aea;
+}
+
+.education-section {
+    display: inline;
+    
+}
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.skill-card {
+    background-color: #1e1e2e;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #9f7aea;
+}
+
+/* Projects Section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* Contact Section */
+#Contact {
+    text-align: center;
+}
+
+form input {
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.contact-section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #2a2a44;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 150px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form button {
+    background: #ff00ff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 150px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e600e6;
+}
